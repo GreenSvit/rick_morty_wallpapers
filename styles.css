@@ -1,158 +1,157 @@
 .page-body {
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 40px;
-    color: #ffffff;
-    background-color: #0A1243;
-    margin: 0;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 40px;
+  color: #ffffff;
+  background-color: #0a1243;
+  margin: 0;
 }
 
 .gallery {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .container {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .gallery__buttons {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .gallery__button {
-    background-color: #FFCF00;
-    border-radius: 5px;
-    border: 3px solid #A68700;
-    font-family: inherit;
-    font-size: 25px;
+  background-color: #ffcf00;
+  border-radius: 5px;
+  border: 3px solid #a68700;
+  font-family: inherit;
+  font-size: 25px;
 }
 
 .gallery__button:active {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .gallery__button--top {
-    width: 200px;
-    height: 40px;
+  width: 200px;
+  height: 40px;
 }
 
 .gallery__button:hover {
-    cursor: pointer;
-    background-color: #FFE959;
-    border-color: #FFCF00;
+  cursor: pointer;
+  background-color: #ffe959;
+  border-color: #ffcf00;
 }
 
 .gallery__main-img {
-    margin: 0;
-    margin-top: 30px;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .gallery__img-source {
-    display: block;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    border: 5px solid #00002e;
-    border-radius: 3px;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border: 5px solid #00002e;
+  border-radius: 3px;
 }
 
 .gallery__main-title {
-    text-align: center;
+  text-align: center;
 }
 
 .gallerry__thumbnails {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-
-.gallery__button--bottom h3 {
-    margin: 0;
+.gallery__button--bottom span {
+  margin: 0;
+  display: block;
 }
 
 @media (max-width: 1000px) {
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
 
-    .gallery {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 20px;
-    }
+  .gallerry__thumbnails {
+    display: none;
+  }
 
-    .gallerry__thumbnails {
-        display: none;
-    }
+  .container {
+    width: 600px;
+  }
 
-    .container {
-        width: 600px;
-    }
+  .gallery__buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .gallery__buttons {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .gallery__button {
+    width: 150px;
+    font-size: 20px;
+  }
 
-    .gallery__button {
-        width: 150px;
-        font-size: 20px;
-    }
+  .gallery__button:not(:first-child) {
+    margin-top: 15px;
+  }
 
-    .gallery__button:not(:first-child) {
-        margin-top: 15px;
-    }
+  .gallery__img-source {
+    width: 100%;
+    height: auto;
+  }
 
-    .gallery__img-source {
-        width: 100%;
-        height: auto;
-    }
-
-    .gallery__main-img {
-        margin-left: 20px;
-    }
+  .gallery__main-img {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 720px) {
-    .container {
-        width: 90vw;
-    }
+  .container {
+    width: 90vw;
+  }
 
-    .gallery {
-        flex-direction: column-reverse;
-        padding: 0;
-        padding-top: 30px;
-    }
+  .gallery {
+    flex-direction: column-reverse;
+    padding: 0;
+    padding-top: 30px;
+  }
 
-    .gallery__buttons {
-        margin-top: 30px;
-        width: 70vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .gallery__buttons {
+    margin-top: 30px;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .gallery__button:not(:first-child) {
-        margin-top: 10px;
-    }
+  .gallery__button:not(:first-child) {
+    margin-top: 10px;
+  }
 
-    .gallery__button {
-        width: 100%;
-    }
+  .gallery__button {
+    width: 100%;
+  }
 
-    .gallery__main-img {
-        margin-left: 0;
-        margin-top: 0;
-    }
+  .gallery__main-img {
+    margin-left: 0;
+    margin-top: 0;
+  }
 
-    .gallery__main-title {
-        font-size: 30px;
-    }
+  .gallery__main-title {
+    font-size: 30px;
+  }
 
-    .gallery__img-source {
-        margin-top: 10px;
-    }
+  .gallery__img-source {
+    margin-top: 10px;
+  }
 }
